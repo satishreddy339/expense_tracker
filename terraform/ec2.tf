@@ -29,7 +29,7 @@ data "template_file" "user_data" {
 }
 
 resource "aws_instance" "expense_tracker" {
-  ami                    = "ami-08c40ec9ead489470" # Ubuntu 22.04 LTS (us-east-1)
+  ami                    = "ami-02d26659fd82cf299" # Ubuntu 24.04 LTS (ap-south-1)
   instance_type          = var.instance_type
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.expense_sg.id]
